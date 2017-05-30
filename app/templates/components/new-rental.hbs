@@ -32,7 +32,7 @@
         </div>
 
         <div class="panel-footer">
-          <button {{action 'saveRental1'}}>Save</button>
+          <button class="btn bg-success"{{action 'saveRental1'}}>Save</button>
         </div>
       </form>
     </div>
@@ -42,5 +42,5 @@
 <p>
   </p>
 {{else}}
-<button {{action 'rentalFormShow'}}>New Rental</button>
+<button class="btn bg-info"{{action 'rentalFormShow'}}>New Rental</button>
 {{/if}}

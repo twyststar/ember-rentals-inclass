@@ -17,10 +17,8 @@
 
 <div class="well">
   <ul>
-  {{#each model.reviews as |review|}}
-    <li>{{review.rating}} - {{review.content}} - by {{review.author}}</li>
-  {{/each}}
-</ul>
+    {{#each model.reviews as |review|}}
+      <li>{{review.rating}} - {{review.content}} - by {{review.author}}</li>
+    {{/each}}
+  </ul>
 </div>
-
-{{new-review saveReview2="saveReview3"}}

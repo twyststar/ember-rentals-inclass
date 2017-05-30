@@ -1,5 +1,10 @@
 {{#if updateRentalForm}}
+<br>
+<div class="panel panel-success">
+  <div class="panel-heading">
   <h4>Update {{rental.owner}}'s {{rental.type}}</h4>
+  </div>
+  <div class="panel-body">
   <div>
     <form>
       <div class="form-group">
@@ -26,10 +31,14 @@
         <label for="image">Image URL</label>
         {{input value=image id="image" placeholder=rental.image}}
       </div>
-
-      <button {{action 'update' rental}}>Save</button>
+      <div class="panel-footer">
+      <button class="btn bg-success"{{action 'update' rental}}>Save</button>
+      </div>
     </form>
   </div>
+</div>
+  </div>
 {{else}}
-  <button {{action 'updateRentalForm'}}>Update</button>
+<br>
+  <button class="btn bg-primary"{{action 'updateRentalForm'}}>Update Rental</button>
 {{/if}}
